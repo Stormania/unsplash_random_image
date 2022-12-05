@@ -40,8 +40,8 @@ class _UnsplashRandomImageState extends State<UnsplashRandomImagePage> {
   Widget unsplash() {
     return Image.network(
       _imageUrl,
-      height: double.infinity,
-      width: double.infinity,
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
       fit: BoxFit.cover,
     );
   }
